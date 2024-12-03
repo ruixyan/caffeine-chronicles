@@ -116,7 +116,7 @@
             createButton("").position(270, 650).style("background-color", "red").mousePressed(() => changeColor(255, 0, 0));
             createButton("").position(210, 650).style("background-color", "black").style("color", "white").mousePressed(() => changeColor(0, 0, 0));
             createButton("").position(390, 650).style("background-color", "blue").style("color", "white").mousePressed(() => changeColor(0, 0, 255));
-            createButton("").position(330, 650).style("background-color", "green").style("color", "white").mousePressed(() => changeColor(0, 255, 0));
+            createButton("").position(330, 650).style("background-color", "green").style("color", "white").mousePressed(() => changeColor(0, 128, 1));
         }
 
         function draw() {
@@ -142,8 +142,8 @@
 
             }
             
-            if (r === 0 && g === 255 && b === 0) {
-                cursorChange(0, 255, 0); // Set cursor color to green    
+            if (r === 0 && g === 128 && b === 1) {
+                cursorChange(0, 128, 1); // Set cursor color to green    
 
             }
 
