@@ -13,7 +13,7 @@
       
       <a-assets>
         <img id="texture" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/Helleborus-%E2%80%98Onyx-Odyssey%E2%80%99.png?v=1726788967739">
-        <audio id="lofi-jazz" src="/audio/lofi-jazzhop-chillhop-praga-262035.mp3"></audio>
+        <audio id="lofi-jazz" src="audio/lofi-jazzhop-chillhop-praga-262035.mp3"></audio>
       </a-assets>
 
       <a-image 
@@ -73,6 +73,7 @@
                position="-10 -3 13" 
                width="9" height="15"
                rotation="0 30 0"
+               sound="src: #lofi-jazz; autoplay: true; loop: true"
                src="https://cdn.glitch.global/2c514651-d254-446e-8d2f-8a197cd45c68/joecoffeewomaninback.png?v=1729562743145">
       </a-image>
       
@@ -82,17 +83,6 @@
                rotation="0 90 0"
                src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
       </a-image>
-
-      <a-box id="toggle-button" 
-                position="0 1.5 -3" 
-                depth="0.1" 
-                height="0.5" 
-                width="0.5" 
-                color="#4CC3D9"
-                sound="src: #lofi-jazz;
-                      on: click">
-      </a-box>
- 
 
       <a-sky color="#ffffff"></a-sky>
       
