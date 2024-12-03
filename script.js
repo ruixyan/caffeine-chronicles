@@ -44,7 +44,7 @@ galleryContainer.addEventListener("mousemove", (e) => {
 function goBack() {
     // Logic for going back; could be a history.back() or any custom logic
     window.history.back();
+
+
 }
-
-
 

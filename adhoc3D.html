@@ -7,11 +7,16 @@
   <body>
     <a-scene>
       
-      <a-camera position="15 1 30"></a-camera>
+      <a-camera position="15 1 30">
+        <a-cursor
+            position="0 0 -1"
+            geometry="primitive: sphere; radius: 0.007"
+            material="color: red; shader: flat">
+        </a-cursor>
+      </a-camera>
       
       <a-assets>
-        <img id="texture" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/Helleborus-%E2%80%98Onyx-Odyssey%E2%80%99.png?v=1726788967739">
-        <a-asset-item id="crystals" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/glowing_crystals.glb?v=1726791469279"></a-asset-item>
+        <audio id="bones" src="audio/Bones.mp3"></audio>
       </a-assets>
 
       <a-image 
@@ -58,7 +63,7 @@
       </a-image>
       
       <a-image 
-               position="18 -8 13" 
+               position="18 -8 15" 
                width="6" height="10"
                rotation="0 0 0"
                src="https://cdn.glitch.global/557602a1-861c-48a4-8bfa-296e1d09d191/adhoctablelegs.png?v=1733099041367">
@@ -92,6 +97,14 @@
                width="8" height="12"
                rotation="0 45 0"
                src="https://cdn.glitch.global/557602a1-861c-48a4-8bfa-296e1d09d191/adhocwoman2.png?v=1733099023653">
+      </a-image>
+      
+            <a-image 
+               position="18 -2.5 14.5" 
+               width="2.5" height="3"
+               rotation="0 0 90"
+               sound="src: #bones; on: click"
+               src="https://cdn.glitch.global/557602a1-861c-48a4-8bfa-296e1d09d191/radio.png?v=1733242153184">
       </a-image>
       
 

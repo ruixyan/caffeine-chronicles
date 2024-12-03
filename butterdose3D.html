@@ -7,11 +7,16 @@
   <body>
     <a-scene>
       
-      <a-camera position="15 1 30"></a-camera>
+      <a-camera position="15 1 30">
+        <a-cursor
+          position="0 0 -1"
+          geometry="primitive: sphere; radius: 0.007"
+          material="color: red; shader: flat">
+        </a-cursor>
+      </a-camera>
       
       <a-assets>
-        <img id="texture" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/Helleborus-%E2%80%98Onyx-Odyssey%E2%80%99.png?v=1726788967739">
-        <a-asset-item id="crystals" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/glowing_crystals.glb?v=1726791469279"></a-asset-item>
+        <audio id="said-no" src="audio/Blood Orange - Said No (Bonus Track).mp3"></audio>
       </a-assets>
 
       <a-image 
@@ -43,6 +48,20 @@
                src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdosetabletop.png?v=1732916874229">
       </a-image>
       
+      <a-image 
+               position="7 -3 15" 
+               width="8" height="12"
+               rotation="0 45 0"
+               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdosegirl.png?v=1732916844710">
+      </a-image>
+      
+      <a-image 
+               position="8 -1 18.5" 
+               width="2.5" height="3"
+               rotation="0 0 90"
+               sound="src: #said-no; on: click"
+               src="https://cdn.glitch.global/557602a1-861c-48a4-8bfa-296e1d09d191/radio.png?v=1733242153184">
+      </a-image>
  
       
       <a-image 
@@ -52,13 +71,6 @@
                src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
       </a-image>
       
-      
-      <a-image 
-               position="7 -3 15" 
-               width="8" height="12"
-               rotation="0 45 0"
-               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdosegirl.png?v=1732916844710">
-      </a-image>
      
       <a-image 
                position="7 -4 13.8" 

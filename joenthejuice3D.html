@@ -10,8 +10,7 @@
       <a-camera position="24 1 30"></a-camera>
       
       <a-assets>
-        <img id="texture" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/Helleborus-%E2%80%98Onyx-Odyssey%E2%80%99.png?v=1726788967739">
-        <a-asset-item id="crystals" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/glowing_crystals.glb?v=1726791469279"></a-asset-item>
+        <audio id="relax-my-eyes" src="audio/ANOTR, Abel Balder - Relax My Eyes.mp3"></audio>
       </a-assets>
 
       <a-image 
@@ -119,13 +118,14 @@
                position="-6 4 15" 
                width="12" height="24"
                rotation="0 0 0"
-               src="https://cdn.glitch.global/1f834586-5ce2-463e-833d-c7e0b7f70b3c/jntjpillar.png?v=1733197781792">
+               src="https://cdn.glitch.global/1f834586-5ce2-463e-833d-c7e0b7f70b3c/jntjpillar.png?v=1733197781792"
+               sound="src: #relax-my-eyes; autoplay: true; loop: true">
       </a-image>
       
       <button class="back-button" onclick="goBack()">back to <br>menu</button>
       
       
-      <a-sky color="#ffffff"></a-sky>s
+      <a-sky color="#ffffff"></a-sky>
       
     </a-scene>
   </body>
