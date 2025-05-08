@@ -112,12 +112,47 @@
             });
             
             // Create buttons
-            createButton("").position(150, 650).mousePressed(clearCanvas);
-            createButton("").position(270, 650).style("background-color", "red").mousePressed(() => changeColor(255, 0, 0));
-            createButton("").position(210, 650).style("background-color", "black").style("color", "white").mousePressed(() => changeColor(0, 0, 0));
-            createButton("").position(390, 650).style("background-color", "blue").style("color", "white").mousePressed(() => changeColor(0, 0, 255));
-            createButton("").position(330, 650).style("background-color", "green").style("color", "white").mousePressed(() => changeColor(0, 128, 1));
-        }
+            let buttonSize = 25; // You can adjust this or make it responsive too
+            let y = windowHeight * 0.8; // 85% down the screen
+
+            createButton("")
+            .position(windowWidth * 0.1, y)
+            .style("width", buttonSize + "px")
+            .style("height", buttonSize + "px")
+            .mousePressed(clearCanvas);
+
+            createButton("")
+            .position(windowWidth * 0.15, y)
+            .style("background-color", "black")
+            .style("color", "white")
+            .style("width", buttonSize + "px")
+            .style("height", buttonSize + "px")
+            .mousePressed(() => changeColor(0, 0, 0));
+
+            createButton("")
+            .position(windowWidth * 0.2, y)
+            .style("background-color", "red")
+            .style("width", buttonSize + "px")
+            .style("height", buttonSize + "px")
+            .mousePressed(() => changeColor(255, 0, 0));
+
+            createButton("")
+            .position(windowWidth * 0.25, y)
+            .style("background-color", "green")
+            .style("color", "white")
+            .style("width", buttonSize + "px")
+            .style("height", buttonSize + "px")
+            .mousePressed(() => changeColor(0, 128, 1));
+
+            createButton("")
+            .position(windowWidth * 0.3, y)
+            .style("background-color", "blue")
+            .style("color", "white")
+            .style("width", buttonSize + "px")
+            .style("height", buttonSize + "px")
+            .mousePressed(() => changeColor(0, 0, 255));
+
+                    }
 
         function draw() {
             // Set stroke color for drawing
